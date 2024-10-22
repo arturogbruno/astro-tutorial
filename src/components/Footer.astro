@@ -1,0 +1,30 @@
+---
+import Social from './Social.astro';
+const platform = 'github';
+const social1 = 'X';
+const social2 = 'Instagram';
+const username = 'arturogbruno';
+---
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
+<footer>
+  <p>
+    Learn more about my projects on <Social
+      platform={platform}
+      username={username}
+    />!
+  </p>
+  <p>
+    Follow me on <Social platform={social1} username={username} /> and <Social
+      platform={social2}
+      username={username}
+    />!
+  </p>
+</footer>
